@@ -68,6 +68,7 @@ SI.SpaceShip.prototype.setLocation = function (newX) {
  * painter - canvas context(painter)
  */
 SI.SpaceShip.prototype.draw = function (painter) {
+	if (this.img.complete)
 	painter.drawImage(this.img, this.imgX, 0, this.img.width, this.img.height,
 			this.x, this.y, this.width, this.height);
 	
@@ -112,6 +113,7 @@ SI.Rocket.prototype.move = function (deltaY) {
 	}
 }
 SI.Rocket.prototype.draw = function (painter) {
+	if (this.img.complete)
 	painter.drawImage(this.img, this.x, this.y, SI.Sizes.rocketWidth, SI.Sizes.rocketHeight); 
 }
 
@@ -150,6 +152,7 @@ SI.EnemyRocket.prototype.move = function (deltaY) {
 	}
 }
 SI.EnemyRocket.prototype.draw = function (painter) {
+	if (this.img.complete)
 	painter.drawImage(this.img, this.x, this.y, SI.Sizes.enemyrocketWidth, SI.Sizes.enemyrocketHeight); 
 }
 //===================Explosions ==============================
@@ -179,6 +182,7 @@ SI.Explosion = function (options) {
 }
 
 SI.Explosion.prototype.draw = function (painter) {
+	if (this.img.complete)
 	painter.drawImage(this.img, this.imgX, 0, this.img.width, this.img.height,
 			this.x, this.y, SI.Sizes.explosionWidth, SI.Sizes.explosionHeight);
 }

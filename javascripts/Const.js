@@ -92,7 +92,7 @@ SI.Images.explosionImg.height = 40;
  * Colors for fillStyle and strokeStyle
  */
 SI.Colors = {
-	rocket: '#07f',
+	rocket: 'blue',
 	ground: 'green',
 	text: 'white',
 }
