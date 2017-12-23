@@ -65,7 +65,7 @@ SI.Images = {};
 
 
 SI.Images.playerImg = new Image();
-SI.Images.playerImg.src = 'images/player.png';
+SI.Images.playerImg.src = 'images/player.PNG';
 SI.Images.playerImg.phases = 1 - 1;
 SI.Images.playerImg.width = 70;
 SI.Images.playerImg.height = 70;
